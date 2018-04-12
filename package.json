@@ -1,0 +1,22 @@
+{
+  "name": "babel_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "babel carex.js -o carex.out.js & node carex.out.js",
+    "watch" : "babel carex.js -w -o carex.out.js",
+    "allstart": "babel . -d babel_project_task & carex.js -> babel_project_task/carex.js & product.js -> babel_project_task/product.js & node babel_project_task/carex.js & node babel_project_task/product.js",
+    "allwatch": "babel . -w -d babel_project_task & carex.js -> babel_project_task/carex.out.js & product.js -> babel_project_task/product.out.js & product.js -> babel_project_task/produt.out.js",
+    "compact": "babel . --compact=true -d babel_project_task"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "dependencies": {}
+}
